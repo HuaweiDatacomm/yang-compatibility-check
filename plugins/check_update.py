@@ -1,6 +1,7 @@
 """YANG module update check tool
 This plugin checks if an updated version of a module follows
-the rules defined in Section 10 of RFC 6020 and Section 11 of RFC 7950.
+the rules defined in Section 10 of RFC 6020 and Section 11 of RFC 7950 or 
+huawei rules or the third-paryt rules.
 """
 
 import optparse
