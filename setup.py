@@ -9,7 +9,6 @@ setup(
     version='0.1',
     description=('A plugin to check a YANG file compatibility Schema that according huawei or the third-party rules.'),
     long_description=read('README.md'),
-    packages=['compatibilitycheck'],
     author='niubiwocao',
     author_email='niubiwocao@huawei.com',
     license='New-style BSD',
