@@ -75,7 +75,7 @@ class CheckUpdatePlugin(plugin.PyangPlugin):
         error.add_error_code(
             'CHK_BAD_REVISION', 1,
             "new revision %s is not newer than old revision %s"
-            + " (RFC 6020: sec. 10, p2)")
+            + " (Third-Party rules: sec. 10, p2)")
         error.add_error_code(
             'CHK_BAD_REVISION_v1.1', 1,
             "new revision %s is not newer than old revision %s"
