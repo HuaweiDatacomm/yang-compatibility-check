@@ -22,3 +22,5 @@ $ ./check-models.sh -b 8.21.0
 The script will check basic compilation using pyang (some open modules will be reported missing unless you include them on your pyang module path) and then run backwards compatibility checks against the model in the ../8.20.10 directory. 
 # The NBC subdirectory
 Model specific non-backward compatible changes are documented in json files in the directory Non-Backward compatible Changes.
+# XPath displayed
+To indicate YANG grouping and typedef, additional annotation of braces '{}' is used to signify these YANG node types in the XPath.
