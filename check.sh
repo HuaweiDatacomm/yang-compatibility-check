@@ -31,7 +31,7 @@ checkDir () {
     exit_status=""
     cwd=`pwd`
     cd $1
-    to_process=`grep -L submodule huawei-*-cfg.yang huawei-*-oper.yang huawei-sysadmin-*.yang`
+    to_process=`grep -L submodule huawei-*-cfg.yang huawei-*-oper.yang huawei-sysadmin-*.yang huawei-*-deviation*.yang`
     for f in $to_process; do
 	if [ "$debug" -eq "1" ]; then
 	    echo Checking $f...
