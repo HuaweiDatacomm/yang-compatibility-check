@@ -87,7 +87,7 @@ if [ -z "$CHECK_BC" ]; then
 fi
 
 #
-# Run pyang over all the models in the 533 directory that also exist
+# Run pyang over all the models in the directory that also exist
 # in the 532 peer directory, using the --check-update-from option.
 # This requires pyang 1.5 or better, so we check this first.
 #
