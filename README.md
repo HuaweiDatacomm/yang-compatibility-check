@@ -9,9 +9,10 @@ modifying  results.
 # installation:
 python setup.py install 
 # yang-compatibility-check illustration:
-python yang-compatibility-check -p $new_path -P $old_path --check-update-from=$old_files $new_files
+python yang-compatibility-check -p $new_path -P $old_path --check-update-from=$old_files $new_files --o out/compatibility_results.xml --rule rules.xml
 # yang-schema-compare illustration:
-python yang-compatibility-check --deviation-module=$new_deviation_files.yang --check-update-from=$old_files $new_files
+python yang-compatibility-check --deviation-module=$new_deviation_files.yang --check-update-from=$old_files $new_files --o out/compatibility_results.xml --rule rules.xml
+ -o out/compatibility_rule.xml -compatible-check --rule rules.xml
 # Backwards Compatibility Issues:
 It should be noted that some of the modules released in huawei may break the backwards compatibility guidelines defined in RFC 6020 when compared to the same modules released in huawei_N+1. This is because the "native" YANG modules for huawei are generated from internal schema files that are an integral part of the implementation, and, as such, these can change in ways that break backwards compatibility per RFC 6020/7950 guidelines when new features are introduced or when bugs are fixed. Thus, while we rigorously review the changes that impact the external YANG schema, Huawei cannot guarantee full backwards compatibility of these modules across releases.
 
