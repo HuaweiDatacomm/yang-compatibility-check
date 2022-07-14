@@ -491,6 +491,9 @@ Validates the YANG module in <filename> (or stdin), and all its dependencies."""
 
     if o.ignore_errors:
         ctx.errors = []
+
+    #open('logfile', 'ab') as file:
+    #file.write(line)
     sys.stderr.write("[")
     lenn = len(ctx.errors)
     lenn1 = 1
@@ -533,8 +536,12 @@ Validates the YANG module in <filename> (or stdin), and all its dependencies."""
         else:
             str1 = str(epos.ref)
             str1 = str1.replace("\\", "\\\\")
-            sys.stderr.write('{"filename":"%s","line":"%s","code":"%s","kind":"%s","msg":"%s","level":"%s"}\n' %
-                             (str1, epos.line, etag, kind, emsg, elevel))
+            if etag == 'CHK_UNDECIDED_MUST':
+               sys.stderr.write('{"filename":"%s","line":"%s","compatibility":"unknown","type":"%s","kind":"%s","description":"%s","level":"%s"}\n' %
+                              (str1, epos.line, etag, kind, emsg, elevel))
+            else:
+               sys.stderr.write('{"filename":"%s","line":"%s","compatibility":"non-backward-compatible","type":"%s","kind":"%s","description":"%s","level":"%s"}\n' %
+                              (str1, epos.line, etag, kind, emsg, elevel))
             if lenn1 < lenn:
                 sys.stderr.write(",")
                 lenn1 = lenn1 + 1
