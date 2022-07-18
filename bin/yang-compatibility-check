@@ -595,5 +595,5 @@ def parse_features_string(s):
             return modulename, features
 
 if __name__ == '__main__':
-    os.system("python C:\\Users\\lwx1102823\\PycharmProjects\\pyang\\pyang\\parse_rules.py")
+    os.system("python"  + path)
     run()
