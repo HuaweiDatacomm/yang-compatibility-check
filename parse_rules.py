@@ -4,7 +4,7 @@ from xml.dom.minidom import parse
 import xml.dom.minidom
 
 # 使用minidom解析器打开 XML 文档
-DOMTree = xml.dom.minidom.parse("C:\\Users\\00123726\\PycharmProjects\\pyang\\pyang\\rules1.xml")
+DOMTree = xml.dom.minidom.parse(path)
 rules = DOMTree.documentElement
 if rules.hasAttribute("shelf"):
    print ("Root element : %s" % rules.getAttribute("shelf"))
