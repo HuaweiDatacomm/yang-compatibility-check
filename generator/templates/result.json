@@ -1,1 +1,8 @@
- 
+ [{"filename":"huawei-aaa.yang","line":"142","compatibility":"unknown","type":"CHK_UNDECIDED_MUST","kind":"warning","description":"when or must is changed, it's unknown change.","level":"4"}
+,{"filename":"huawei-aaa.yang","line":"239","compatibility":"unknown","type":"CHK_UNDECIDED_MUST","kind":"warning","description":"when or must is changed, it's unknown change.","level":"4"}
+,{"filename":"huawei-aaa.yang","line":"766","compatibility":"non-backward-compatible","type":"CHK_DEF_REMOVED","kind":"error","description":"the default 'default_admin', defined at C:\\Users\\lwx1102823\\PycharmProjects\\pyang\\yang\\network-router\\8.20.10\\ne40e-x8x16\\huawei-aaa.yang:723 is illegally removed","level":"3"}
+,{"filename":"huawei-aaa.yang","line":"773","compatibility":"non-backward-compatible","type":"CHK_DEF_REMOVED","kind":"error","description":"the default 'default1', defined at C:\\Users\\lwx1102823\\PycharmProjects\\pyang\\yang\\network-router\\8.20.10\\ne40e-x8x16\\huawei-aaa.yang:731 is illegally removed","level":"3"}
+,{"filename":".\\huawei-aaa-lam.yang","line":"154","compatibility":"non-backward-compatible","type":"CHK_DEF_ADDED","kind":"error","description":"the range '[(1, 20)]' is illegally added","level":"3"}
+,{"filename":".\\huawei-aaa-lam.yang","line":"281","compatibility":"unknown","type":"CHK_UNDECIDED_MUST","kind":"warning","description":"when or must is changed, it's unknown change.","level":"4"}
+,{"filename":".\\huawei-aaa-lam.yang","line":"292","compatibility":"unknown","type":"CHK_UNDECIDED_MUST","kind":"warning","description":"when or must is changed, it's unknown change.","level":"4"}
+]
