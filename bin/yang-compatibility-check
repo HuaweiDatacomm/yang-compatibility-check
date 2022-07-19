@@ -205,6 +205,10 @@ Validates the YANG module in <filename> (or stdin), and all its dependencies."""
                              action="store_true",
                              help="Do not recurse into directories in the \
                                    yang path."),
+        optparse.make_option("--rule-path",
+                             dest="rule_path",
+                             help="Specify the rule_path of the; \
+                                   compatible compare."),
         ]
 
     optparser = optparse.OptionParser(usage, add_help_option = False)
